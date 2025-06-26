@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Affichage de la Température</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f0f0; text-align: center; margin-top: 50px; }
+        .temperature { font-size: 3em; color: #0078D7; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Température Actuelle</h1>
+    <div class="temperature" id="temperature">-- °C</div>
+    <button onclick="afficherTemperature()">Afficher la température</button>
+
+    <script>
+        function afficherTemperature() {
+            // Exemple de température simulée
+            const temperature = 23; // Remplacez par une valeur réelle
+            document.getElementById('temperature').innerText = temperature + ' °C';
+        }
+    </script>
+</body>
+</html>
